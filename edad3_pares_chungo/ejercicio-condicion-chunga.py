@@ -2,11 +2,7 @@
 
 numero = input ("Inserta un número : ")
 
-if numero %2 == 0 :
-	print "Número par."
-	
-if (numero >= -10 and numero <= 40) :
-	print "Número entre -10 y 40."
-
-if numero < 0 :
-	print "Número negativo."
+if (numero %2 == 0) and (numero >= -10 and numero <= 40) and (numero < 0):
+	print "Cumple las 3 condiciones."
+else:
+	print "No cumple las 3 condiciones."
