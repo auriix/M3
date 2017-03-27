@@ -9,5 +9,5 @@ while (salir == False) :
 	tecla = raw_input ("Sal con s o S:")
 	
 	if (tecla == "S" or tecla == "s" ) :
-  	print ("Adiós")
-    salir = True
+  		print ("Adiós")
+    		salir = True
