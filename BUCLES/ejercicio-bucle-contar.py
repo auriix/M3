@@ -10,4 +10,4 @@ while (salir == False) :
 	if (num == 50) :
 		salir = True
     
-  num = num + 1
+	num = num + 1
