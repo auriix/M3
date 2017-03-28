@@ -12,7 +12,7 @@ while (salir == False) :
 	if (cont == 1) :
 		salir = True
   
-	cont = cont + 1
+	cont = cont - 1
 
 if (ceros == 2) :
 	print "És primo."
