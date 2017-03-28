@@ -1,7 +1,7 @@
 #coding: utf-8
 
 num = 2
-limite = raw_input ("Escribe el límite: "
+limite = input ("Escribe el límite: ")
 salir = False
 
 while (salir == False):
