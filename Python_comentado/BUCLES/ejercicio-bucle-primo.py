@@ -1,5 +1,6 @@
 #coding: utf-8
 
+
 #Inicialització de les variables.
 num = input ("Inserta un número: ")
 cont = num - 1
