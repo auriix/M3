@@ -79,7 +79,7 @@ while (salir==False) :
 		else :
 			print "Has guanyat!!"
 		
-
+#Condició de sortida
 	if (num <> num2) :
 		salir = True
 		
