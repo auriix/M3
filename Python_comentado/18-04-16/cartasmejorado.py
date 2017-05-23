@@ -1,12 +1,15 @@
 #coding: utf-8
 
+#Imports
 import os
 os.system('clear')
-
 from random import randint 
+
+#Variables.
 salir = False
 
-while (salir==False) :
+#Inici del bucle.
+while (salir==False) : #Condició d'entrada.
 
 	aleatori = randint (1,4)
 	if (aleatori == 1) :
@@ -21,7 +24,7 @@ while (salir==False) :
 	if (aleatori == 4) :
 		palo = "de corazones"
 		
-	num = randint (2,14)
+	num = randint (2,14) #El 14 es el AS.
 	if (num <= 10) :
 		carta = num
 
@@ -51,7 +54,7 @@ while (salir==False) :
 	if (aleatori2 == 4) :
 		palo2 = "de corazones"
 		
-	num2 = randint (2,14)
+	num2 = randint (2,14) #El 14 es el AS.
 	if (num2 <= 10) :
 		carta2 = num2
 
@@ -68,9 +71,11 @@ while (salir==False) :
 		carta2 = "A"
 
 
+#Resultats de les jugades:
 	print "Màquina:", carta, palo
 	print "Tú:", carta2, palo2
-
+	
+#Qui guanya:
 	if (num == num2) :
 		print "Empat"
 	else :
@@ -79,6 +84,6 @@ while (salir==False) :
 		else :
 			print "Has guanyat!!"
 		
-
+#Condició de sortida.
 	if (num <> num2) :
-salir = True
+		salir = True
