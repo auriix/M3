@@ -1,26 +1,32 @@
 #coding: utf-8
 #Imports
 import os
-os.system('clear')
 import random
 
+#clear
+os.system('clear')
+
+#Variables
+salir = False
 cartas = {'1': , '2': ,'3': , '4': ,'5': , '6': ,'7': , '8': ,'9': , '10': ,'11': , '12': ,'13': , '14': }
 palo = = {'1': , '2': ,'3': , '4': }
 
-maquina = random.choice(cartas.keys()) + random.choice(palo.keys())
-jugador = random.choice(cartas.keys()) + random.choice(palo.keys())
+while (salir==False) do
 
-print "Màquina: " + maquina 
-print "Jugador: " + jugador
+	maquina = random.choice(cartas.keys()) 
+	jugador = random.choice(cartas.keys()) 
 
-if (num == num2) :
-	print "Empat"
-else :
-	if (num > num2) :
-		print "Guanya la màquina!!"
+	print "Màquina: " + maquina + random.choice(palo.keys())
+	print "Jugador: " + jugador + random.choice(palo.keys())
+
+	if (maquina == jugador) :
+		print "Empat"
 	else :
-		print "Has guanyat!!"
-		
+		if (maquina > jugador) :
+			print "Guanya la màquina!!"
+		else :
+			print "Has guanyat!!"
 
-if (num <> num2) :
-	salir = True
+
+	if (maquina <> jugador) :
+		salir = True
