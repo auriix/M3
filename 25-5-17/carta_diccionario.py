@@ -14,7 +14,9 @@ salir = False
 while (salir==False) :
 	
 	random.choice(diccionari.keys())
-		
+	print "Màquina":
+	diccionari.pop (random.choice)	
+	
 
 
 	print "Màquina:", carta, palo
