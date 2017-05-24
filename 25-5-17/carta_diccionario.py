@@ -8,13 +8,14 @@ os.system('clear')
 
 #Variables
 salir = False
-cartas = {'2': 2 ,'3': 3 , '4': 4 ,'5': 5 , '6': 6 ,'7': 7  , '8': 8 ,'9': 9 , '10': 10 , 'J': 11 , 'Q': 12,'K': 13, 'AS': 14 }
+cartas = {'2': 2 ,'3': 3 , '4': 4 ,'5': 5 , '6': 6 ,'7': 7  , '8': 8 ,'9': 9 , '10': 10 , 'J': 11 , 'Q': 12,'K': 13, 'AS': 14}
 palo = {'Diamantes':"1", 'Picas':"2", 'Tréboles':"3", 'Corazones':"4"}
 
 while (salir==False) :
 
-	maquina = random.choice(cartas.keys()) 
+	maquina = random.choice(cartas.keys())
 	jugador = random.choice(cartas.keys()) 
+
 	
 	print "Màquina: ", maquina, random.choice(palo.keys())
 	print "Jugador: ", jugador, random.choice(palo.keys())
